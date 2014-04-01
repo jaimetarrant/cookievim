@@ -1,0 +1,8 @@
+" vim: set tw=78 nospell filetype=vim:
+
+" Empty User Configuration File, put vim configurations here ...
+" You can have any number of files inside the personal directory,
+" they will all be loaded.
+
+let mapleader = ','
+
