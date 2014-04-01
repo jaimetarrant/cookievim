@@ -72,7 +72,7 @@ echo " creating the .vim/bundle directory ..."
 mkdir .vim/bundle
 
 echo " cloning cookievim"
-git clone git@bitbucket.org:jdt/cookievim.git ~/.vim/cookievim
+git clone git@github.com:jaimetarrant/cookievim.git ~/.vim/cookievim
 
 echo " cloning gmarik/vundle ..."
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -112,7 +112,7 @@ else
       2) echo " creating a copy of Jaime\'s vim settings and plugins (y/n)"
         read yn
         echo " cloning cookievim-config"
-        git clone git@bitbucket.org:jdt/cookievim-config.git ~/.cookievim-config
+        git clone git@github.com:jaimetarrant/cookievim-config.git ~/.cookievim-config
         echo " done.";;
     esac 
   done
