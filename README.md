@@ -32,13 +32,15 @@ There are two main directory locations.
 
 The `~/.vimrc` only loads cookievim, and contains: 
 
-    " Source CookieVim config  {
-    "
-    if filereadable(expand('~/.vim/cookievim/cookievim.vim'))
-        source ~/.vim/cookievim/cookievim.vim
-    endif
-    
-    " }
+```viml
+" Source CookieVim config  {
+"
+if filereadable(expand('~/.vim/cookievim/cookievim.vim'))
+  source ~/.vim/cookievim/cookievim.vim
+endif
+
+" }
+```
 
 I keep the configurations separate from the framework so that the framework
 can be updated independantly of the config and vise-versa.
