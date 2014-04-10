@@ -26,7 +26,7 @@ filetype plugin indent on                           " required!
 " Source Bundles the Cookie way {
 " -------------------------------
 "
-" Bundles are sourced from the .vim/cookievim/bundle-includes/ directory. All
+" Bundles are sourced from the .cookievim-config/bundle-loaded/ directory. All
 " files within this directory will be loaded, just create a new file for
 " the new plugin. i.e. 
 "
@@ -40,8 +40,8 @@ filetype plugin indent on                           " required!
 " (1) Create a new file for each plugin that you want to use.
 " (2) Put the repository in that file using the " Bundle ' ... ' " syntax. 
 " (3) Put plugin specific configurations in that file too. 
-" (4) Put personal vim configurations and everything else either in your .vimrc
-"     or in the ~/.vim/cookievim/personal/personal.vim file. 
+" (4) Put personal vim configurations and everything else in your
+"     .cookievim-config/personal/ directory.  
 "
 " }
 
