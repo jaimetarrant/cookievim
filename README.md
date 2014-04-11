@@ -10,7 +10,7 @@ that are tidier and more elaborate.
  - Write your own
  - Add only what you need and understand
 
-I have tried to follow the above after more than 10 years with a messy ever
+I have tried to follow the above after more than 10 years with an ever
 growing .vimrc and for a short period, trying out some of the vim
 distributions that can be found on Github.  
 
