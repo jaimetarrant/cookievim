@@ -18,6 +18,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 filetype plugin indent on                           " required!
+syntax on
 
 " Some additional pre-configurations {
 " ------------------------------------

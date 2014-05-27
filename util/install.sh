@@ -61,6 +61,13 @@ else
   echo " we will create a .vim directory for you."
 fi
 
+if [[ ! -e ~/.tmp ]]; then
+  echo " making .tmp directory for vim edit backup files."
+  mkdir .tmp
+else
+  echo " .tmp directory found, moving along."
+fi
+
 # Start Install
 
 echo "Installing CookieVim"
