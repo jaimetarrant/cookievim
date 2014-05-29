@@ -83,7 +83,8 @@ directory.
 ## cookievim-config directory
 
 You may want to fork or create your own repo for the `cookievim-config`
-configuration directory. 
+configuration directory. To deactivate anything in my configuration that you
+do not want, simply delete it or rename it without a .config extension. 
 
 My one is located here: https://github.com/jaimetarrant/cookievim-config
 
