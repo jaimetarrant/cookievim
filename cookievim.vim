@@ -11,14 +11,12 @@ set nocompatible
 filetype off                                        " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle                          " required! 
 
 Bundle 'gmarik/vundle'
 
-filetype plugin indent on                           " required!
-syntax on
 
 " Some additional pre-configurations {
 " ------------------------------------
@@ -59,6 +57,11 @@ for f in split(glob('~/.cookievim-config/bundle-loaded/*.config'), '\n')
 endfor
 " }
 
+call vundle#end()                 " required 
+
+filetype plugin indent on         " required!
+syntax on
+
 
 " Source personal configs {
 " -------------------------
@@ -72,4 +75,5 @@ for b in split(glob('~/.cookievim-config/personal/*'), '\n')
     endif
 endfor
 " }
+
 
