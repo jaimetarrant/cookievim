@@ -20,32 +20,32 @@ echo ""
 read -t 60 -p "Hit ENTER to contiune or <Ctrl>-C to exit. Resuming in 60s"
 
 
-# Setup backup file names. 
+# Setup backup file names.
 
 VIMRC_BACKUP_DATE=`date +%Y%m%d-%s`
 VIMRC_BACKUP_FILE="vimrc-backup-$VIMRC_BACKUP_DATE.txt"
 VIM_BACKUP_DIR="vimdir-backup-$VIMRC_BACKUP_DATE"
 
-# Pre-installation checks. 
+# Pre-installation checks.
 
 echo ""
 echo "Running pre-installation tests and backups ..."
 
-# Lets go home 
+# Lets go home
 
 cd ~
 
 # Check that git is available
 
 if ! type git > /dev/null; then
-  echo " git not found! " 
+  echo " git not found! "
   echo " you will need to install git before continuing..."
   exit 0;
 else
   echo " found git ... good"
 fi
 
-# Check for and backup .vimrc and .vim if necessary. 
+# Check for and backup .vimrc and .vim if necessary.
 
 if [[ -e ~/.vimrc ]]; then
   echo " backing up existing .vimrc"
@@ -84,11 +84,11 @@ git clone git@github.com:jaimetarrant/cookievim.git ~/.vim/cookievim
 echo " cloning gmarik/vundle ..."
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
-echo " creating your .vimrc, which loads cookievim ..."
-cp ~/.vim/cookievim/util/vimrc ~/.vimrc
+echo " linking .vimrc to ~/.vim/vimrc, which loads cookievim ..."
+ln -s ~/.vim/cookievim/vimrc ~/.vimrc
 
 # Create a configuration directory.
-# Clone my config if desired. 
+# Clone my config if desired.
 if [[ -e ~/.cookievim-config ]]; then
   echo " found a cookievim-config directory, we will leave it be .."
 else
@@ -112,7 +112,7 @@ else
         read yn
         echo " creating empty directory tree"
         mkdir ~/.cookievim-config
-        cp -r ~/.vim/cookievim/util/skel/* ~/.cookievim-config/ 
+        cp -r ~/.vim/cookievim/util/skel/* ~/.cookievim-config/
         mv ~/.cookievim-config/personal/user-settings.file ~/.cookievim-config/personal/$USER.vim
         echo " done.";;
 
@@ -121,7 +121,7 @@ else
         echo " cloning cookievim-config"
         git clone git@github.com:jaimetarrant/cookievim-config.git ~/.cookievim-config
         echo " done.";;
-    esac 
+    esac
   done
 fi
 
@@ -138,7 +138,7 @@ echo "If you add or remove bundles, dont forget to run :BundleInstall or "
 echo ":BundleUpdate to update the configuration."
 echo ""
 echo "Remember, all your config stuff lives in the ~/.cookievim-config "
-echo "directory. You do need to touch ~/.vim/ or your ~/.vimrc file with" 
+echo "directory. You do need to touch ~/.vim/ or your ~/.vimrc file with"
 echo "this setup. The reason is to allow cookievim core updates without "
 echo "overwriting your configuration settings."
 echo ""
@@ -152,8 +152,8 @@ echo ""
 read -t 60 -p "Hit ENTER to contiune, we'll automatically start in 60 seconds"
 echo ""
 
-# Run Bundle Install to complete setup    
+# Run Bundle Install to complete setup
 
 vim +BundleInstall
 
-# Done. 
+# Done.

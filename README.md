@@ -5,9 +5,6 @@ This is the CookieVim framework. All config's are stored in a separate repo,
 (cookievim-config) located here:
 https://github.com/jaimetarrant/cookievim-config.git
 
-You probably do not want to use this one, there are plenty of others on github
-that are tidier and more elaborate.
-
 ## Philosophy
 
  - Keep it simple
