@@ -77,6 +77,11 @@ You can install cookievim and continue to use your own configuration simply by
 placing the configuration file into your `~/.cookievim-config/personal/`
 directory.
 
+## Important Note
+At the moment, there are some post installation things that need to be done,
+such as building YouCompleteMe after BundleInstall. I plan to update the
+install script to take care of this too soon.
+
 ## cookievim-config directory
 
 You may want to fork or create your own repo for the `cookievim-config`
