@@ -5,6 +5,10 @@ This is the CookieVim framework. All config's are stored in a separate repo,
 (cookievim-config) located here:
 https://github.com/jaimetarrant/cookievim-config.git
 
+This framework provides a way to configure vim using self contained
+configuration files created for each plugin that a user desires to use. It
+uses `vundle` to manage those plugins.
+
 ## Philosophy
 
  - Keep it simple
