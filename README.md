@@ -97,7 +97,7 @@ configuration, or an empty starter config.
 
 Try this to install:
 
-    curl https://raw.githubusercontent.com/jaimetarrant/cookievim/master/util/install.sh > cookievim-install.sh && bash cookievim-install.sh
+    curl https://raw.githubusercontent.com/jaimetarrant/cookievim/master/util/install.sh > cookievim-install.sh && sh cookievim-install.sh
 
 You can install cookievim and continue to use your own configuration simply by
 placing the configuration file into your `~/.cookievim-config/personal/`

@@ -17,8 +17,8 @@ echo ".cookievim-config directory will not be touched. If you want to"
 echo "create a new one, move and backup or delete your existing one "
 echo "first. "
 echo ""
-read -t 60 -p "Hit ENTER to contiune or <Ctrl>-C to exit. Resuming in 60s"
-
+echo "Hit ENTER to contiune or <Ctrl>-C to exit." 
+read $voidInput
 
 # Setup backup file names.
 
@@ -149,8 +149,8 @@ echo ""
 echo "Final step. Load vim and install plugins... "
 echo ""
 
-read -t 60 -p "Hit ENTER to contiune, we'll automatically start in 60 seconds"
-echo ""
+echo "Hit ENTER to contiune"
+read $voidInput
 
 # Run Bundle Install to complete setup
 
