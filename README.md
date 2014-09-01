@@ -1,13 +1,32 @@
 # =^..^= cookievim
 Jaime's personal vim configuration
 
-This is the CookieVim framework. All config's are stored in a separate repo,
+This is the CookieVim framework that I put together to simplify my life now
+that I use, and regularly change between vim plugins. The idea is simple, just
+store each plugin specific config in its own file in a directory, and load
+them all.
+
+This approach allows the framework to be updated without affecting configs,
+and to store configurations safely in a separate repo.
+
+My config's are stored in a separate repo,
 (cookievim-config) located here:
 https://github.com/jaimetarrant/cookievim-config.git
+
+I have created a simple (probably buggy) installer that gives the option to
+install CookieVim without any configs so that you can add only the ones that
+you want to use, or with mine.
 
 This framework provides a way to configure vim using self contained
 configuration files created for each plugin that a user desires to use. It
 uses `vundle` to manage those plugins.
+
+You can rip out a plugin, and all its config simply by renaming or deleting
+the plugin file that you created, an example lives in
+`.cookievim-config/bundle-loaded/EXAMPLE.config`.
+
+It is called *CookieVim* because I am going through a phase where I name
+everything after my little dog. :)
 
 ## Philosophy
 
@@ -18,9 +37,6 @@ uses `vundle` to manage those plugins.
 I have tried to follow the above after more than 10 years with an ever
 growing .vimrc and for a short period, trying out some of the vim
 distributions that can be found on Github.
-
-It is called *CookieVim* because I am going through a phase where I name
-everything after my little dog. :)
 
 I have decided to share it as maybe somebody will find something useful for
 their own configuration in here. The vast majority of it has been put together
@@ -65,6 +81,11 @@ Inside the `~/.cookievim-config/personal/` personal directory, you can have as
 many files as you like or a single big one. Put all your vim specific config
 options in here.
 
+A quick way to get started would be to install cookievim and then place your
+.vimrc into the `~/.cookievim-config/personal/` directory with a file name of
+your choice .. `myconfig.vim` as an example.
+
+
 ## Install
 
 There is a rough and ready little shell script that will back up your existing
@@ -83,15 +104,20 @@ directory.
 
 ## Important Note
 At the moment, there are some post installation things that need to be done,
-such as building YouCompleteMe after BundleInstall. I plan to update the
-install script to take care of this too soon.
+such as building YouCompleteMe after BundleInstall if I happen to still be
+using it. Just remember that some plugins require extra steps that you may
+need to take care of after install.,
 
 ## cookievim-config directory
 
 You may want to fork or create your own repo for the `cookievim-config`
 configuration directory. To deactivate anything in my configuration that you
-do not want, simply delete it or rename it without a .config extension.
+do not want, simply delete it or rename it without a .config extension. My
+repo has a few `something.notloaded` files where I have disabled them, but
+might decide to use them again - so I just keep them there.
 
 My one is located here: https://github.com/jaimetarrant/cookievim-config
 
+Its not perfect, if you find issues, have suggestions, or even happen to just
+like it, or hate it, feel free to let me know :)
 
