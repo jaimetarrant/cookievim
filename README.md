@@ -4,7 +4,8 @@ Jaime's personal vim configuration
 This is the CookieVim framework that I put together to simplify my life now
 that I use, and regularly change between vim plugins. The idea is simple, just
 store each plugin specific config in its own file in a directory, and load
-them all.
+them all. If you don't use a plugin anymore, get rid of it and all configs
+easily by renaming or removing the file.
 
 This approach allows the framework to be updated without affecting configs,
 and to store configurations safely in a separate repo.
@@ -118,6 +119,35 @@ might decide to use them again - so I just keep them there.
 
 My one is located here: https://github.com/jaimetarrant/cookievim-config
 
+## When you make changes to your config
+
+If you have added a new plugin, be sure to run this from within vim:
+
+```viml
+:BundleInstall
+```
+
+If you have removed a plugin, or renamed it from a `.config` extension.
+
+```viml
+:BundleClean
+```
+
+If you just feel like updating everything
+
+```viml
+:BundleUpdate
+```
+
+At this point, given that it may take a moment, if you feel like a coffee
+
+```
+get coffee
+```
+
+## Finally
+
 Its not perfect, if you find issues, have suggestions, or even happen to just
 like it, or hate it, feel free to let me know :)
+
 
