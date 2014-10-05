@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Simple installer for CookieVim
 
@@ -17,7 +17,7 @@ echo ".cookievim-config directory will not be touched. If you want to"
 echo "create a new one, move and backup or delete your existing one "
 echo "first. "
 echo ""
-echo "Hit ENTER to contiune or <Ctrl>-C to exit." 
+echo "Hit ENTER to contiune or <Ctrl>-C to exit."
 read $voidInput
 
 # Setup backup file names.
